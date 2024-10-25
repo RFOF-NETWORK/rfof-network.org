@@ -1,5 +1,7 @@
 # RFOF-NETWORKgithub.io
 https://rfof-network.github.io/rfofnetwork.github.io/
+fusion with 
+https://rfof-og.webador.de/informationen
 RFOF Network ist eine innovative, nachhaltige Blockchain-Plattform, die globale Herausforderungen adressiert. Mit Projekten wie dem Rescuer Layer für Umwelt- und Tierschutz, Cannabis-Kultur, erneuerbare Energien sowie Bitcoin, Bubatz Coin und CTC zielt RFOF darauf ab, soziale und finanzielle Synergien weltweit zu schaffen.
 # RFOF Network - Blockchain für globale Lösungen
 
