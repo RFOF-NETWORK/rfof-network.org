@@ -1,4 +1,5 @@
-# RFOF-NETWORKgithub.io
+# rfof-network.github.io
+github.io
 ### Projektstruktur
 
 ```
@@ -30,6 +31,8 @@ project-root/
 └── .devcontainer/           # Entwicklungscontainer für Multi-Chain-Support
     └── devcontainer.json
 ```
+
+https://rfof-network.github.io/rfofnetwork.github.io/
 
 https://rfof-network.github.io
 http://rfofnetwork.github.io
