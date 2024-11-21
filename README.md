@@ -75,6 +75,7 @@ github.io
 ### Projektstruktur
 
 ```
+
 project-root/
 ├── contracts/               # Smarte Verträge für Token & Funktionen
 │   ├── bbc/
@@ -82,7 +83,7 @@ project-root/
 │   ├── tokens/
 │   │   ├── TBC.sol          # To-Batz Token
 │   │   ├── TBTC.sol         # To-Batt Token
-│   │   ├── NEC.sol          # Not-Energy-Coin
+│   │   ├── NEC.sol          # Nicht-Energie-Coin
 │   │   └── BBCHO.sol        # Bubatz-Coin-Holder-Official
 ├── api/                     # API zur Steuerung und Logik
 │   ├── main.py              # Haupt-API
@@ -102,7 +103,7 @@ project-root/
 │   └── config.yaml
 └── .devcontainer/           # Entwicklungscontainer für Multi-Chain-Support
     └── devcontainer.json
-```
+,,,
 
 https://rfof-network.github.io/rfofnetwork.github.io/
 
