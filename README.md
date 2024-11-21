@@ -1,5 +1,6 @@
 ## rfof-network.github.io 
-# Project structur
+
+### Project structur
 project-root/
 ├── contracts/               # Smart contracts for tokens & functions
 │   ├── bbc/
@@ -73,7 +74,7 @@ Here are simple smart contracts for the tokens:
 
 ## rfof-network.github.io
 
-# Projektsruktur
+### Projektsruktur
 project-root/
 ├── contracts/               # Smarte Verträge für Token & Funktionen
 │   ├── bbc/
