@@ -1,4 +1,5 @@
 ## rfof-network.github.io 
+# Project structur
 project-root/
 ├── contracts/               # Smart contracts for tokens & functions
 │   ├── bbc/
@@ -70,12 +71,9 @@ This structure integrates various components such as Smart Contracts, API, Front
 Here are simple smart contracts for the tokens:
 
 
-# rfof-network.github.io
-github.io
-### Projektstruktur
+## rfof-network.github.io
 
-```
-
+# Projektsruktur
 project-root/
 ├── contracts/               # Smarte Verträge für Token & Funktionen
 │   ├── bbc/
@@ -103,7 +101,6 @@ project-root/
 │   └── config.yaml
 └── .devcontainer/           # Entwicklungscontainer für Multi-Chain-Support
     └── devcontainer.json
-,,,
 
 https://rfof-network.github.io/rfofnetwork.github.io/
 
