@@ -103,13 +103,7 @@ project-root/
 └── .devcontainer/           # Entwicklungscontainer für Multi-Chain-Support
     └── devcontainer.json
 
-https://rfof-network.github.io/rfofnetwork.github.io/
-
-https://rfof-network.github.io
-http://rfofnetwork.github.io
-http://rfof-network.github.io.org/
-http://rfof-network.org 
-rfof-network.org
+https://rfof-network.github.io/rfofnetwork.github.io/ = rfof-network.org
 
 RFOF Network ist eine innovative, nachhaltige Blockchain-Plattform, die globale Herausforderungen adressiert. Mit Projekten wie dem Rescuer Layer für Umwelt- und Tierschutz, Cannabis-Kultur, erneuerbare Energien sowie Bitcoin, Bubatz Coin und CTC zielt RFOF darauf ab, soziale und finanzielle Synergien weltweit zu schaffen.
 # RFOF Network - Blockchain für globale Lösungen
