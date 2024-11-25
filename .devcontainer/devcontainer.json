@@ -1,0 +1,5 @@
+{
+  "image": "mcr.microsoft.com/rfofnetwork.github.io/devcontainers/universal:2",
+  "features": {
+  }
+}
