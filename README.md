@@ -2,32 +2,41 @@
 https://rfof-network.github.io/rfofnetwork.github.io/
 ### Project structur
 project-root/
-├── contracts/               # Smart contracts for tokens & functions
+├── .git/
+├── docs/ # GitHub Pages files
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+├── contracts/ # Smart contracts for tokens & functions
 │   ├── bbc/
 │   │   └── BBC_Token_Code.py.fc
 │   ├── tokens/
-│   │   ├── TBC.sol          # To-Batz Token
-│   │   ├── TBTC.sol         # To-Batt Token
-│   │   ├── NEC.sol          # Not-Energy-Coin
-│   │   └── BBCHO.sol        # Bubatz-Coin-Holder-Official
-├── api/                     # API for control and logic
-│   ├── main.py              # Main API
-│   └── handlers/            # Modules for managing transactions, tokens, users
+│   │   ├── TBC.sol # To-Batz Token
+│   │   ├── TBTC.sol # To-Batt Token
+│   │   ├── NEC.sol # Not-Energy-Coin
+│   │   └── BBCHO.sol # Bubatz-Coin-Holder-Official
+├── api/ # API for control and logic
+│   ├── main.py # Main API
+│   └── handlers/ # Modules for managing transactions, tokens, users
 │       ├── transaction_handler.py
 │       ├── token_handler.py
 │       └── user_handler.py
-├── frontend/                # Web interface for user interactions
+├── frontend/ # Web interface for user interactions
 │   ├── index.html
 │   ├── app.js
 │   └── style.css
-├── utils/                   # Helper modules for efficiency and security
+├── utils/ # Helper modules for efficiency and security
 │   ├── blockchain_utils.py
 │   ├── encryption.py
 │   └── validation.py
-├── config/                  # Configuration files for APIs and networks
+├── config/ # Configuration files for APIs and networks
 │   └── config.yaml
-└── .devcontainer/           # Development container for multi-chain support
-    └── devcontainer.json
+├── .devcontainer/ # Development container for multi-chain support
+│   └── devcontainer.json
+├── .gitignore
+├── README.md
+├── LICENSE
+
 
 
 # rfof-network.org
@@ -76,32 +85,41 @@ Here are simple smart contracts for the tokens:
 
 ### Projektsruktur
 project-root/
-├── contracts/               # Smarte Verträge für Token & Funktionen
+├── .git/
+├── docs/ # GitHub Pages files
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+├── contracts/ # Smart contracts for tokens & functions
 │   ├── bbc/
 │   │   └── BBC_Token_Code.py.fc
 │   ├── tokens/
-│   │   ├── TBC.sol          # To-Batz Token
-│   │   ├── TBTC.sol         # To-Batt Token
-│   │   ├── NEC.sol          # Nicht-Energie-Coin
-│   │   └── BBCHO.sol        # Bubatz-Coin-Holder-Official
-├── api/                     # API zur Steuerung und Logik
-│   ├── main.py              # Haupt-API
-│   └── handlers/            # Module zur Verwaltung von Transaktionen, Token, Nutzern
+│   │   ├── TBC.sol # To-Batz Token
+│   │   ├── TBTC.sol # To-Batt Token
+│   │   ├── NEC.sol # Not-Energy-Coin
+│   │   └── BBCHO.sol # Bubatz-Coin-Holder-Official
+├── api/ # API for control and logic
+│   ├── main.py # Main API
+│   └── handlers/ # Modules for managing transactions, tokens, users
 │       ├── transaction_handler.py
 │       ├── token_handler.py
 │       └── user_handler.py
-├── frontend/                # Web-Oberfläche für Nutzerinteraktionen
+├── frontend/ # Web interface for user interactions
 │   ├── index.html
 │   ├── app.js
 │   └── style.css
-├── utils/                   # Helfer-Module für Effizienz und Sicherheit
+├── utils/ # Helper modules for efficiency and security
 │   ├── blockchain_utils.py
 │   ├── encryption.py
 │   └── validation.py
-├── config/                  # Konfigurationsdateien für APIs und Netzwerke
+├── config/ # Configuration files for APIs and networks
 │   └── config.yaml
-└── .devcontainer/           # Entwicklungscontainer für Multi-Chain-Support
-    └── devcontainer.json
+├── .devcontainer/ # Development container for multi-chain support
+│   └── devcontainer.json
+├── .gitignore
+├── README.md
+├── LICENSE
+
 
 https://rfof-network.github.io/rfofnetwork.github.io/ = rfof-network.org
 
