@@ -513,7 +513,6 @@ document.addEventListener('DOMContentLoaded', fetchTransactions);
 
 
 document.addEventListener('DOMContentLoaded', fetchTransactions);
-```
 
 **style.css**
 body {
