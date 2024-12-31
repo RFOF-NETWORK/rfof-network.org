@@ -1,5 +1,13 @@
 {
-  "image": "mcr.microsoft.com/rfofnetwork.github.io/devcontainers/universal:2",
-  "features": {
-  }
+    "name": "RFOF Blockchain Dev",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "appPort": [5000],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    },
+    "extensions": [
+        "ms-python.python"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt"
 }
