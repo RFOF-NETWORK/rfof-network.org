@@ -336,12 +336,22 @@ project-root/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
+├── contracts/
+│   ├── bbc/
+│   │   └── BBC_Token_Code.py.fc
+│   ├── tokens/
+│   │   ├── TBC.sol
+│   │   ├── TBTC.sol
+│   │   ├── NEC.sol
+│   │   └── BBCHO.sol
 ├── api/
 │   ├── main.py
 │   └── handlers/
 │       ├── transaction_handler.py
 │       ├── token_handler.py
 │       └── user_handler.py
+├── RFOFNetworkAPI/
+│   ├── @RFOF-NETWORK.py
 ├── frontend/
 │   ├── index.html
 │   ├── app.js
@@ -489,25 +499,7 @@ h1 {
     <pre>
 <code>
 import hashlib
-import json
-
-def hash(block):
-    block_string = json.dumps(block, sort_keys=True).encode()
-    return hashlib.sha256(block_string).hexdigest()
-</code>
-    </pre>
-
-    <h4>Encryption (encryption.py)</h4>
-    <pre>
-<code>
-from cryptography.fernet import Fernet
-
-def generate_key():
-    return Fernet.generate_key()
-
-def encrypt_message(message, key):
-    fernet = Fernet(key)
-    encrypted = fernet.encrypt(message.encode[_{{{CITATION{{{_1{](https://github.com/hd-code/pandoc-docker/tree/07f83c6deeafbff1710c5f7992a97955c298ad61/example%2Fexample.md)[_{{{CITATION{{{_2{](https://github.com/vanessabehawetz/WEB-A4/tree/d2d3fee623f5a3044e02ab31e43a2ef07cd91abb/WEB-A4-master%2FWEB_UB2_updated%2FweitereWohnungen4.5.php)[_{{{CITATION{{{_3{](https://github.com/hamzakarabulut/Webshop/tree/240af1e97a4a090a1d03e71f702cb9ec62068a42/bakeryv3%2Forders.php)[_{{{CITATION{{{_4{](https://github.com/minwooook/bc/tree/f731d1588461b625314815caade0afc01e464b10/openapi.py)
+[_{{{CITATION{{{_1{](https://github.com/hd-code/pandoc-docker/tree/07f83c6deeafbff1710c5f7992a97955c298ad61/example%2Fexample.md)[_{{{CITATION{{{_2{](https://github.com/vanessabehawetz/WEB-A4/tree/d2d3fee623f5a3044e02ab31e43a2ef07cd91abb/WEB-A4-master%2FWEB_UB2_updated%2FweitereWohnungen4.5.php)[_{{{CITATION{{{_3{](https://github.com/hamzakarabulut/Webshop/tree/240af1e97a4a090a1d03e71f702cb9ec62068a42/bakeryv3%2Forders.php)[_{{{CITATION{{{_4{](https://github.com/minwooook/bc/tree/f731d1588461b625314815caade0afc01e464b10/openapi.py)
 
 **app.js**
 // Hier kannst du die Logik für die Interaktion mit der API implementieren
