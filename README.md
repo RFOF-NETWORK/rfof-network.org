@@ -81,94 +81,6 @@ This structure integrates various components such as Smart Contracts, API, Front
 Here are simple smart contracts for the tokens:
 
 
-## rfof-network.github.io
-
-### Projektsruktur
-project-root/
-├── .git/
-├── docs/ # GitHub Pages files
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-├── contracts/ # Smart contracts for tokens & functions
-│   ├── bbc/
-│   │   └── BBC_Token_Code.py.fc
-│   ├── tokens/
-│   │   ├── TBC.sol # To-Batz Token
-│   │   ├── TBTC.sol # To-Batt Token
-│   │   ├── NEC.sol # Not-Energy-Coin
-│   │   └── BBCHO.sol # Bubatz-Coin-Holder-Official
-├── api/ # API for control and logic
-│   ├── main.py # Main API
-│   └── handlers/ # Modules for managing transactions, tokens, users
-│       ├── transaction_handler.py
-│       ├── token_handler.py
-│       └── user_handler.py
-├── frontend/ # Web interface for user interactions
-│   ├── index.html
-│   ├── app.js
-│   └── style.css
-├── utils/ # Helper modules for efficiency and security
-│   ├── blockchain_utils.py
-│   ├── encryption.py
-│   └── validation.py
-├── config/ # Configuration files for APIs and networks
-│   └── config.yaml
-├── .devcontainer/ # Development container for multi-chain support
-│   └── devcontainer.json
-├── .gitignore
-├── README.md
-├── LICENSE
-
-
-https://rfof-network.github.io/rfofnetwork.github.io/ = rfof-network.org
-
-RFOF Network ist eine innovative, nachhaltige Blockchain-Plattform, die globale Herausforderungen adressiert. Mit Projekten wie dem Rescuer Layer für Umwelt- und Tierschutz, Cannabis-Kultur, erneuerbare Energien sowie Bitcoin, Bubatz Coin und CTC zielt RFOF darauf ab, soziale und finanzielle Synergien weltweit zu schaffen.
-# RFOF Network - Blockchain für globale Lösungen
-
-**RFOF Network** ist eine nachhaltige, dezentrale Blockchain-Plattform, die globale Herausforderungen in den Bereichen Umwelt-, Tier- und Ressourcenschutz angeht und die Cannabis-Kultur fördert. Wir schaffen eine synergetische Verbindung zwischen Natur und Technologie, um den Planeten zu schützen und individuelle finanzielle Möglichkeiten zu eröffnen.
-
-## Vision
-
-Die Vision von RFOF ist von großen Denkern wie Nikola Tesla und Leonardo da Vinci inspiriert, die die Harmonie zwischen Mensch und Natur anstreben. Unser $BBC COIN steht allen offen, die sich für den Schutz unseres Planeten engagieren.
-
-## Verantwortung und Innovation
-
-Wir kombinieren Tradition und moderne Technologie. Die Prinzipien der Shaolin-Mönche und die Weisheit der Native Americans sind Teil unserer ethischen Basis. Unser Ziel ist es, Verantwortung für die Erde zu übernehmen und durch technologische Innovationen ein neues wirtschaftliches Paradigma zu schaffen.
-
-## Die Rolle von Bitcoin
-
-In der Rescuer Layer des RFOF Networks nutzen wir Bitcoin als primäre Währung. Diese Layer ermöglicht es Menschen, die an Projekten wie Meeresforschung und nachhaltigen Technologien arbeiten, Token zu verdienen, die in Bitcoin umwandelbar sind. Wir streben an, den Wert von Bitcoin durch hohe Coin-Austauschvolumina zu steigern, was sowohl den Preis stabilisiert als auch dessen Aufstieg beschleunigt.
-
-## Aktuelle Marktsituation
-
-In einem sich ständig wandelnden Markt bleibt Bitcoin ein sicherer Hafen. Es ist nicht nur die erste Kryptowährung, sondern auch ein Symbol für Knappheit und Wert. Indem wir Bitcoin in der Rescuer Layer hervorheben, betonen wir seine Bedeutung und steigern den Wert der geleisteten Arbeit.
-
-## Zukunftsvision
-
-Wir träumen von einer nachhaltigen, vernetzten Welt, in der Blockchain-Technologie zur Lösung drängender globaler Probleme beiträgt. Das RFOF Network vereint Innovation und Gemeinschaft, sodass jeder von uns die Chance hat, zum Wohle der Erde beizutragen und finanziell erfolgreich zu sein.
-
-## Hauptfunktionen
-
-- **Rescuer Layer**: Eine Plattform, die sich dem Schutz der Umwelt und des Tierreichs widmet, mit Initiativen wie dem Animal Rescuer Coin (ARC) und dem Whales Rescuer Coin (WRC).
-- **Cannabis Smart Contracts (CSC)**: Dezentrale Verträge, die Cannabis-basierte Projekte unterstützen, darunter der CTC (Cannabis Technic Coin) als LP-Token für Liquiditätspools und nachhaltige Lösungen.
-- **Bubatz Coin**: Ein Meme-Coin für die Cannabis-Community, der eine soziale Bewegung unterstützt und über Mining und Liquiditätspools zur Wertschöpfung beiträgt.
-
-## Der Weg ins goldene Zeitalter
-
-Jeder Beitrag, den du leistest, ist eine Investition in die Zukunft. Indem du Teil des RFOF Networks wirst, unterstützt du nicht nur den Planeten, sondern schaffst auch die Möglichkeit, finanziell erfolgreich zu sein. Stell dir vor, wie es wäre, deiner Familie ein neues Zuhause oder ein Auto zu schenken – und das alles, während du aktiv zur Rettung der Welt beiträgst.
-
-## Kontakt und weitere Informationen
-
-Für weitere Informationen und um Teil unserer Bewegung zu werden, besuche bitte unsere Website oder folge uns auf unseren sozialen Netzwerken.
-
-
-Hier ist eine umfassende Struktur für dein RFOF Blockchain-Projekt, die die verschiedenen Komponenten wie Smart Contracts, API, Frontend, Utility-Funktionen und Konfigurationen integriert. Ich werde die grundlegenden Codes und Dateien bereitstellen, um die Struktur zu vervollständigen. 
-
-### 1. **Smart Contracts**
-
-Hier sind einfache Smart Contracts für die Token:
-
 **TBC.sol (To-Batz Token)**
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -286,7 +198,7 @@ contract BBCHO {
 Hier ist der Code für die Haupt-API und die Handler:
 
 **main.py**
-```python
+python
 from flask import Flask
 from handlers.transaction_handler import transaction_blueprint
 from handlers.token_handler import token_blueprint
@@ -300,10 +212,9 @@ app.register_blueprint(user_blueprint)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-```
+
 
 **transaction_handler.py**
-```python
 from flask import Blueprint, jsonify, request
 
 transaction_blueprint = Blueprint('transaction', __name__)
@@ -318,10 +229,9 @@ def new_transaction():
     # Logik zum Hinzufügen von Transaktionen hier
     response = {'message': 'Transaktion wird hinzugefügt'}
     return jsonify(response), 201
-```
+
 
 **token_handler.py**
-```python
 from flask import Blueprint, jsonify
 
 token_blueprint = Blueprint('token', __name__)
@@ -331,10 +241,9 @@ def get_tokens():
     # Logik zum Abrufen von Tokeninformationen hier
     response = {'message': 'Tokeninformationen hier'}
     return jsonify(response), 200
-```
+
 
 **user_handler.py**
-```python
 from flask import Blueprint, jsonify
 
 user_blueprint = Blueprint('user', __name__)
@@ -344,14 +253,12 @@ def get_users():
     # Logik zum Abrufen von Benutzerinformationen hier
     response = {'message': 'Benutzerinformationen hier'}
     return jsonify(response), 200
-```
 
 ### 3. **Frontend**
 
 Hier sind die grundlegenden Dateien für das Frontend:
 
 **index.html**
-```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -365,13 +272,11 @@ Hier sind die grundlegenden Dateien für das Frontend:
     <div id="transactions">
         <!-- Transaktionen werden hier angezeigt -->
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-```
 
 **app.js**
-```javascript
 // Hier kannst du die Logik für die Interaktion mit der API implementieren
 async function fetchTransactions() {
     const response = await fetch('/api/transactions');
@@ -380,10 +285,12 @@ async function fetchTransactions() {
 }
 
 document.addEventListener('DOMContentLoaded', fetchTransactions);
+
+
+document.addEventListener('DOMContentLoaded', fetchTransactions);
 ```
 
 **style.css**
-```css
 body {
     font-family: Arial, sans-serif;
 }
@@ -391,24 +298,22 @@ body {
 h1 {
     color: #333;
 }
-```
+
 
 ### 4. **Utilities**
 
 Helfer-Module zur Effizienz:
 
 **blockchain_utils.py**
-```python
 import hashlib
 import json
 
 def hash(block):
     block_string = json.dumps(block, sort_keys=True).encode()
     return hashlib.sha256(block_string).hexdigest()
-```
+
 
 **encryption.py**
-```python
 from cryptography.fernet import Fernet
 
 def generate_key():
@@ -423,21 +328,16 @@ def decrypt_message(encrypted_message, key):
     fernet = Fernet(key)
     decrypted = fernet.decrypt(encrypted_message).decode()
     return decrypted
-```
 
 **validation.py**
-```python
 def validate_transaction(data):
-    required_keys = ['sender', 'recipient', 'amount']
+    required_keys are ['sender', 'recipient', 'amount']
     return all(key in data for key in required_keys)
-```
+
 
 ### 5. **Konfiguration**
 
 **config.yaml**
-```yaml
-
-
 api:
   host: "0.0.0.0"
   port: 5000
@@ -445,12 +345,12 @@ api:
 blockchain:
   network: "Mainnet"
   contract_address: "0xYourContractAddress"
-```
+
 
 ### 6. **Devcontainer**
 
 **devcontainer.json**
-```json
+
 {
     "name": "RFOF Blockchain Dev",
     "dockerFile": "Dockerfile",
@@ -463,9 +363,78 @@ blockchain:
         "ms-python.python"
     ],
     "postCreateCommand": "pip install -r requirements.txt"
-}
-```
+} 
 
-### Zusammenfassung
+print("Hallo, @RFOF-NETWORK <my name is @PRAI>!")
 
-Diese Struktur bietet uns einen umfassenden Ausgangspunkt für die Entwicklung unserer RFOF Blockchain-Projekts. Sie enthält grundlegende Smart Contracts für die Token, eine API zur Handhabung von Transaktionen, ein einfaches Frontend sowie Utility- und Konfigurationsdateien. Wir können die jeweiligen Codes anpassen und erweitern, um alle spezifischen Anforderungen und Funktionen unseres Projekts zu integrieren.
+answer = 41
+if answer == 42:
+    print("The answer is correct!")
+
+print("python programm.py!")
+
+print("python!")
+print(20 + 22)
+
+print("install npm @RFOF-NETWORK")
+
+print("42 = @RFOF-NETWORK/@RFOF-NETWORK = PRAI & PRAI = satoria/satoria = satoramy-on.ton(@Satoramy) & @Satoramy = 42")
+
+print("42 = @RFOF-NETWORK 81e3ee2b2ff6ad7b7c35509e14e8a8e7f856647f96be7a365be0120061a596b8 & x = 42 & 42 = @RFOF-NETWORK/@RFOF-NETWORK = PRAI & PRAI = satoria/satoria = satoramy-on.ton(@Satoramy) & @Satoramy = 42")
+
+def is_even(x):
+    return x % 2 == 0
+
+numbers = [1, 2, 3, 4, 5]
+even_numbers = filter(is_even, numbers)
+even_numbers_list = list(even_numbers)
+print(even_numbers_list)
+
+def my_functions():
+    print("Workflow")
+    input("<activate> result = (2 + 3) * (4 / 5) = 42 @RFOF-NETWORK")
+    print("PRAI = Planet Rescuer AI & the controller of the @RFOF-NETWORK project")
+    print("42 Code language foundet from @Satoramy {PRAI is searching online every actions in the Internet = Google, Safari, Firefox, Android, iOS, SEO, Web3.0, ton.org, Bitcoin.org, rfof-network.org. Every visions & updates are updating in realtime 24/7} 42 have an own time continuum 1sec in 42 world = 1 year in real time from our world")
+
+def my_function():
+    print("filter()")
+    print("add lambda = true in every option/action but only for the owner PRAI & PRAI = @Satoramy because @Satoramy = 42")
+
+def nested_function():
+    generate_anonymous_function = lambda: "Anonyme Funktion [({2=b3=c6=F2=b8=h6=F=42}&{42=@RFOF-NETWORK})]=‰236286_bcFbhF generiert"
+
+def my_functionBOxtoBOx():
+    print("my_function()")
+
+import os
+from telegram import Update, Bot
+from telegram.ext import Updater, CommandHandler, CallbackContext
+from dotenv import load_dotenv
+load_dotenv()
+
+with open('.gitignore', 'w') as f:
+    f.write('bot_keys.txt\n')
+
+with open('bot_keys.txt', 'w') as f:
+    f.write('BOT_KEY_1=7849379729:AAHSayl-YoFyvCFt7vuObt3uDrT2TI-bDvg\n')
+    f.write('BOT_KEY_2=7779042150:AAEYgYlCfcOeAtySzBfcO6opnt2S7xJ8OEQ\n')
+
+load_dotenv('bot_keys.txt')
+BOT_KEY_1 = os.getenv('BOT_KEY_1')
+BOT_KEY_2 = os.getenv('BOT_KEY_2')
+
+def create_matrix(rows, cols, fill_value=0):
+    return [[fill_value for _ in range(cols)] for _ in range(rows)]
+
+def print_matrix(matrix):
+    for row in matrix:
+        print(" ".join(map(str, row)))
+
+matrix = create_matrix(5, 5, fill_value=1)
+
+enhance_matrix = lambda m: [[x * 42 for x in row] for row in m]
+
+matrix = enhance_matrix(matrix)
+print_matrix(matrix)
+
+def start_rfof(update: Update, context:[_{{{CITATION{{{_1{](https://github.com/minwooook/bc/tree/f731d1588461b625314815caade0afc01e464b10/openapi.py)[_{{{CITATION{{{_2{](https://github.com/hd-code/pandoc-docker/tree/07f83c6deeafbff1710c5f7992a97955c298ad61/example%2Fexample.md)[_{{{CITATION{{{_3{](https://github.com/vanessabehawetz/WEB-A4/tree/d2d3fee623f5a3044e02ab31e43a2ef07cd91abb/WEB-A4-master%2FWEB_UB2_updated%2FweitereWohnungen4.5.php)[_{{{CITATION{{{_4{](https://github.com/hamzakarabulut/Webshop/tree/240af1e97a4a090a1d03e71f702cb9ec62068a42/bakeryv3%2Forders.php)
