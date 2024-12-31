@@ -62,13 +62,16 @@ In an ever-changing market, Bitcoin remains a safe haven. It is not only the fir
 We dream of a sustainable, interconnected world where blockchain technology contributes to solving urgent global problems. The RFOF Network combines innovation and community, giving each of us the chance to contribute to the Earth's well-being and achieve financial success.
 
 # Key Features
-# Rescuer Layer: A platform dedicated to protecting the environment and wildlife, with initiatives like the Animal Rescuer Coin (ARC) and the Whales Rescuer Coin (WRC).
+## Rescuer Layer: 
+A platform dedicated to protecting the environment and wildlife, with initiatives like the Animal Rescuer Coin (ARC) and the Whales Rescuer Coin (WRC).
 
-# Cannabis Smart Contracts (CSC): Decentralized contracts that support cannabis-based projects, including the CTC (Cannabis Technic Coin) as an LP token for liquidity pools and sustainable solutions.
+# Cannabis Smart Contracts (CSC): 
+Decentralized contracts that support cannabis-based projects, including the CTC (Cannabis Technic Coin) as an LP token for liquidity pools and sustainable solutions.
 
-# Bubatz Coin: A meme coin for the cannabis community that supports a social movement and contributes to value creation through mining and liquidity pools.
+# Bubatz Coin: 
+A meme coin for the cannabis community that supports a social movement and contributes to value creation through mining and liquidity pools.
 
-# The Path to the Golden Age
+# The Path to the Golden Age :
 Every contribution you make is an investment in the future. By becoming part of the RFOF Network, you not only support the planet but also create opportunities for financial success. Imagine gifting your family a new home or car—all while actively contributing to saving the world.
 
 # Contact and More Information
