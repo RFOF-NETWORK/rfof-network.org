@@ -3,10 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willkommen</title>
+    <link rel="stylesheet" href="style.css">
+    <title>RFOF Network DApp</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Willkommen auf meiner Webseite</h1>
-    <p>Dies ist eine einfache HTML-Seite, die auf GitHub Pages gehostet wird.</p>
+    <h1>Willkommen zur RFOF Network DApp</h1>
+
+    <h2>Über uns</h2>
+    <p>
+        <a href="https://rfof-network.org">rfof-network.org</a><br>
+        RFOF Network is an innovative, sustainable blockchain platform that addresses global challenges. With projects like the Rescuer Layer for environmental and animal protection, cannabis culture, renewable energy, as well as Bitcoin, Bubatz Coin, and CTC, RFOF aims to create social and financial synergies worldwide.
+    </p>
+    <p>
+        <b>RFOF Network - Blockchain for Global Solutions</b><br>
+        RFOF Network is a sustainable, decentralized blockchain platform that tackles global challenges in environmental, animal, and resource protection while promoting cannabis culture. We create a synergistic connection between nature and technology to protect the planet and open up individual financial opportunities.
+    </p>
+
+    <h3>Vision</h3>
+    <p>
+        RFOF's vision is inspired by great thinkers like Nikola Tesla and Leonardo da Vinci, who strive for harmony between humans and nature. Our $BBC COIN is open to everyone who is committed to protecting our planet.
+    </p>
+
+    <h3>Responsibility and Innovation</h3>
+    <p>
+        We combine tradition and modern technology. The principles of the Shaolin monks and the wisdom of Native Americans are part of our ethical foundation. Our goal is to take responsibility for the Earth and create a new economic paradigm through technological innovations.
+    </p>
+
+    <h3>The Role of Bitcoin</h3>
+    <p>
+        In the Rescuer Layer of the RFOF Network, we use Bitcoin as the primary currency. This layer allows people working on projects such as marine research and sustainable technologies to earn tokens that can be converted into Bitcoin. We aim to increase the value of Bitcoin through high coin exchange volumes, stabilizing its price and accelerating its rise.
+    </p>
+
+    <h3>Current Market Situation</h3>
+    <p>
+        In an ever-changing market, Bitcoin remains a safe haven. It is not only the first cryptocurrency but also a symbol of scarcity and value. By highlighting Bitcoin in the Rescuer Layer, we emphasize its importance and enhance the value of the work done.
+    </p>
+
+    <h3>Future Vision</h3>
+    <p>
+        We dream of a sustainable, interconnected world where blockchain technology contributes to solving urgent global problems. The RFOF Network combines innovation and community, giving each of us the chance to contribute to the Earth's well-being and achieve financial success.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul>
+        <li><b>Rescuer Layer:</b> A platform dedicated to protecting the environment and wildlife, with initiatives like the Animal Rescuer Coin (ARC) and the Whales Rescuer Coin (WRC).</li>
+        <li><b>Cannabis Smart Contracts (CSC):</b> Decentralized contracts that support cannabis-based projects, including the CTC (Cannabis Technic Coin) as an LP token for liquidity pools and sustainable solutions.</li>
+        <li><b>Bubatz Coin:</b> A meme coin for the cannabis community that supports a social movement and contributes to value creation through mining and liquidity pools.</li>
+    </ul>
+
+    <h3>The Path to the Golden Age</h3>
+    <p>
+        Every contribution you make is an investment in the future. By becoming part of the RFOF Network, you not only support the planet but also create opportunities for financial success. Imagine gifting your family a new home or car—all while actively contributing to saving the world.
+    </p>
+
+    <h3>Contact and More Information</h3>
+    <p>
+        For more information and to become part of our movement, please visit our website or follow us on our social networks.
+    </p>
+
+    <h2>Projektstruktur</h2>
+    <pre>
+project-root/
+├── .git/
+├── docs/ 
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+├── api/
+│   ├── main.py
+│   └── handlers/
+│       ├── transaction_handler.py
+│       ├── token_handler.py
+│       └── user_handler.py
+├── frontend/
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
+├── utils/
+│   ├── blockchain_utils.py
+│   ├── encryption.py
+│   └── validation.py
+├── config/
+│   └── config.yaml
+├── .devcontainer/
+│   └── devcontainer.json
+├── .gitignore
+├── README.md
+├── LICENSE
+    </pre>
+
+    <h2>2. API</h2>
+
+    <h3>Hier ist der Code für die Haupt-API und die Handler:</h3>
+
+    <h4>Main API (main.py)</h4>
+    <pre>
+<code>
+from flask import Flask
+from handlers.transaction_handler import transaction_blueprint
+from handlers.token_handler import token_blueprint
+from handlers.user_handler import user_blueprint
+
+app = Flask(__name__)
+
+app.register_blueprint(transaction_blueprint)
+app.register_blueprint(token_blueprint)
+app.register_blueprint(user_blueprint)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+</code>
+    </pre>
+
+    <h4>Transaction Handler (transaction_handler.py)</h4>
+    <pre>
+<code>
+from flask import Blueprint, jsonify, request
+
+transaction_blueprint = Blueprint('transaction', __name__)
+
+@transaction_blueprint.route('/transactions/new', methods=['POST'])
+def new_transaction():
+    values = request.get_json()
+    required = ['sender', 'recipient', 'amount']
+    if not all(k in values for k in required):
+        return 'Fehlende Werte', 400
+
+    response = {'message': 'Transaktion wird hinzugefügt'}
+    return jsonify(response), 201
+</code>
+    </pre>
+
+    <h4>Token Handler (token_handler.py)</h4>
+    <pre>
+<code>
+from flask import Blueprint, jsonify
+
+token_blueprint = Blueprint('token', __name__)
+
+@token_blueprint.route('/tokens', methods=['GET'])
+def get_tokens():
+    response = {'message': 'Tokeninformationen hier'}
+    return jsonify(response), 200
+</code>
+    </pre>
+
+    <h4>User Handler (user_handler.py)</h4>
+    <pre>
+<code>
+from flask import Blueprint, jsonify
+
+user_blueprint = Blueprint('user', __name__)
+
+@user_blueprint.route('/users', methods=['GET'])
+def get_users():
+    response = {'message': 'Benutzerinformationen hier'}
+    return jsonify(response), 200
+</code>
+    </pre>
+
+    <h2>3. Frontend</h2>
+
+    <h3>Hier sind die grundlegenden Dateien für das Frontend:</h3>
+
+    <h4>Index HTML (index.html)</h4>
+    <pre>
+<code>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RFOF DApp</title>
+</head>
+<body>
+    <h1>Willkommen zur RFOF DApp!</h1>
+    <div id="transactions">
+        <!-- Transaktionen werden hier angezeigt -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+</code>
+    </pre>
+
+    <h4>App JS (app.js)</h4>
+    <pre>
+<code>
+async function fetchTransactions() {
+    const response = await fetch('/api/transactions');
+    const data = await response.json();
+    // Logik zum Anzeigen von Transaktionen hier
+}
+
+document.addEventListener('DOMContentLoaded', fetchTransactions);
+</code>
+    </pre>
+
+    <h4>Style CSS (style.css)</h4>
+    <pre>
+<code>
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+</code>
+    </pre>
+
+    <h2>4. Utilities</h2>
+
+    <h3>Helfer-Module zur Effizienz:</h3>
+
+    <h4>Blockchain Utils (blockchain_utils.py)</h4>
+    <pre>
+<code>
+import hashlib
+import json
+
+def hash(block):
+    block_string = json.dumps(block, sort_keys=True).encode()
+    return hashlib.sha256(block_string).hexdigest()
+</code>
+    </pre>
+
+    <h4>Encryption (encryption.py)</h4>
+    <pre>
+<code>
+from cryptography.fernet import Fernet
+
+def generate_key():
+    return Fernet.generate_key()
+
+def encrypt_message(message, key):
+    fernet = Fernet(key)
+    encrypted = fernet.encrypt(message.encode[_{{{CITATION{{{_1{](https://github.com/hd-code/pandoc-docker/tree/07f83c6deeafbff1710c5f7992a97955c298ad61/example%2Fexample.md)[_{{{CITATION{{{_2{](https://github.com/vanessabehawetz/WEB-A4/tree/d2d3fee623f5a3044e02ab31e43a2ef07cd91abb/WEB-A4-master%2FWEB_UB2_updated%2FweitereWohnungen4.5.php)[_{{{CITATION{{{_3{](https://github.com/hamzakarabulut/Webshop/tree/240af1e97a4a090a1d03e71f702cb9ec62068a42/bakeryv3%2Forders.php)[_{{{CITATION{{{_4{](https://github.com/minwooook/bc/tree/f731d1588461b625314815caade0afc01e464b10/openapi.py)
