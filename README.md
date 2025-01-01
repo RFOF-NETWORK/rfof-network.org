@@ -1,5 +1,5 @@
 ## rfof-network.github.io 
-https://rfof-network.github.io/rfof-network.github.io
+https://rfofnetwork.github.io
 ### Project structur
 
 project-root/
