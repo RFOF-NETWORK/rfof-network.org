@@ -1,24 +1,4 @@
-Folders and files
-Name	
-Latest commit
-RFOF-NETWORK
-RFOF-NETWORK
-1 hour ago
-History
-
-.devcontainer
-yesterday
-.github
-yesterday
-project-root
-1 hour ago
-README.md
-1 hour ago
-Repository files navigation
-README
-
-
-rfof-network.github.io
+# rfof-network.github.io
 
 https://rfofnetwork.github.io
 
