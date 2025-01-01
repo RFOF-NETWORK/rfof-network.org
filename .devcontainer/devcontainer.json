@@ -1,13 +1,20 @@
 {
-    "name": "RFOF Blockchain Dev",
+    "name": "my project",
     "dockerFile": "Dockerfile",
-    "context": "..",
-    "appPort": [5000],
     "settings": {
-        "python.pythonPath": "/usr/local/bin/python"
+        "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml"
     ],
-    "postCreateCommand": "pip install -r requirements.txt"
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode",
+    "mounts": [
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ],
+    "workspaceFolder": "/workspace"
 }
