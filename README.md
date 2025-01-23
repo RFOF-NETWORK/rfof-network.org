@@ -1,6 +1,6 @@
 # rfof-network.github.io
 
-https://rfofnetwork.github.io
+https://rfofnetwork.github.io/
 
 Project structur
 
