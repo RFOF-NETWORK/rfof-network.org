@@ -7,6 +7,7 @@ Project structur
 
 
 gh_pages NET:
+
 project-root/
 ├── .git/
 ├── docs/ 
@@ -47,6 +48,7 @@ project-root/
 
 
 main NET:
+
 project-root/ ├── .git/ ├── docs/ # GitHub Pages files │ ├── index.html │ ├── style.css │ ├── script.js ├── contracts/ # Smart contracts for tokens & functions │ ├── bbc/ │ │ └── BBC_Token_Code.py.fc │ ├── tokens/ │ │ ├── TBC.sol # To-Batz Token │ │ ├── TBTC.sol # To-Batt Token │ │ ├── NEC.sol # Not-Energy-Coin │ │ └── BBCHO.sol # Bubatz-Coin-Holder-Official ├── api/ # API for control and logic │ ├── main.py # Main API │ └── handlers/ # Modules for managing transactions, tokens, users │ ├── transaction_handler.py │ ├── token_handler.py │ └── user_handler.py ├── frontend/ # Web interface for user interactions │ ├── index.html │ ├── app.js │ └── style.css ├── utils/ # Helper modules for efficiency and security │ ├── blockchain_utils.py │ ├── encryption.py │ └── validation.py ├── config/ # Configuration files for APIs and networks │ └── config.yaml ├── .devcontainer/ # Development container for multi-chain support │ └── devcontainer.json ├── RFOFNetworkAPI/ # API's von RFOFNetworkAPI │ └── @RFOF-NETWORK.py ├── .gitignore ├── README.md ├── LICENSE
 
 rfof-network.org
