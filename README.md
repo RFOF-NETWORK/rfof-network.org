@@ -57,7 +57,7 @@ RFOF Network - Blockchain for Global Solutions
 
 RFOF Network is a sustainable, decentralized blockchain platform that tackles global challenges in environmental, animal, and resource protection while promoting cannabis culture. We create a synergistic connection between nature and technology to protect the planet and open up individual financial opportunities.
 
-Vision
+Vision 
 
 RFOF's vision is inspired by great thinkers like Nikola Tesla and Leonardo da Vinci, who strive for harmony between humans and nature. Our $BBC COIN is open to everyone who is committed to protecting our planet.
 
