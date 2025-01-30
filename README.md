@@ -3,6 +3,9 @@
 https://rfofnetwork.github.io/
 https://rfof-network.github.ton
 
+the first steps to make 
+The Open Network grater with the power from other Decentralised Blockchain system's 💎📣
+
 Project structur
 
 
