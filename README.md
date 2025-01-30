@@ -2,8 +2,9 @@
 
 https://rfofnetwork.github.io/
 https://rfof-network.github.ton
+
 We (RFOF🧠) try to make The Open Network (Blockchain from the Telegram Network) better to use and grow every games and capitals so that TON can become/get energy from every other decentralised Chains or Networks 💎👾🤝we want winning the Telegram Blockchain Contest Round 1 crazy 100K in Dollar per Misssion we have to missions we want Bridging or RFOF NETWORK So that we are the extension from the TON Chain so lets go lets grow🌱🏆
-# Project structur:
+
 
 # RFOF Network
 Dies ist die Webseite des RFOF Networks. Hier findest du Informationen über unser Projekt und unsere Ziele.
