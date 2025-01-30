@@ -1,0 +1,11 @@
+# Beispielkonfigurationsdatei
+database:
+  host: localhost
+  port: 5432
+  name: rfof_network_db
+  user: admin
+  password: secret
+
+blockchain:
+  difficulty: 4
+  reward: 50

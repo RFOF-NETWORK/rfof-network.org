@@ -1,0 +1,6 @@
+{
+    "name": "RFOF Network Dev Container",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000, 8000],
+    "extensions": ["ms-python.python", "esbenp.prettier-vscode"]
+}
