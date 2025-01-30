@@ -1,0 +1,14 @@
+# Beispielcode für ein BBC-Token in Python
+class BBCToken:
+    def __init__(self, name, symbol, total_supply):
+        self.name = name
+        self.symbol = symbol
+        self.total_supply = total_supply
+        self.holders = {}
+
+    def transfer(self, sender, receiver, amount):
+        if self.holders.get(sender, 0) >= amount:
+            self.holders[sender] -= amount
+            self.holders[receiver] = self.holders.get(receiver, 0) + amount
+            return True
+        return False
