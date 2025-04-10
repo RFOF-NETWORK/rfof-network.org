@@ -1,4 +1,4 @@
-# rfof-network.github.io
+# RFOF-NETWORK.github.io
 
 https://rfofnetwork.github.io/
 https://rfof-network.github.ton
