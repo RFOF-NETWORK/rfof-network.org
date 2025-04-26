@@ -631,21 +631,23 @@ def my_functionBOxtoBOx():
     print("my_function()")
 
 import os
-from telegram import Update, Bot
-from telegram.ext import Updater, CommandHandler, CallbackContext
 from dotenv import load_dotenv
+
+# Load sensitive data securely from environment variables
 load_dotenv()
 
-with open('.gitignore', 'w') as f:
-    f.write('bot_keys.txt\n')
-
-with open('bot_keys.txt', 'w') as f:
-    f.write('BOT_KEY_1=7849379729:AAHSayl-YoFyvCFt7vuObt3uDrT2TI-bDvg\n')
-    f.write('BOT_KEY_2=7779042150:AAEYgYlCfcOeAtySzBfcO6opnt2S7xJ8OEQ\n')
-
-load_dotenv('bot_keys.txt')
 BOT_KEY_1 = os.getenv('BOT_KEY_1')
 BOT_KEY_2 = os.getenv('BOT_KEY_2')
+
+def start_bot():
+    if BOT_KEY_1 and BOT_KEY_2:
+        print("Bot keys loaded successfully!")
+    else:
+        print("Error: Bot keys not found!")
+
+if __name__ == "__main__":
+    start_bot()
+
 
 def create_matrix(rows, cols, fill_value=0):
     return [[fill_value for _ in range(cols)] for _ in range(rows)]
